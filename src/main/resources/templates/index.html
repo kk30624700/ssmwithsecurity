@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Insert title here</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css"
+	href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<link rel="stylesheet" th:href="@{/css/main.css}"
+	href="../../css/main.css" />
+</head>
+<body>
+<div class="container">
+	<div class="starter-template">
+		<h1>INDEX</h1>
+		<h2><a th:href="@{/city}">show city info</a></h2>
+		<form th:action="@{/logout}" method="post">
+		    <div><input type="submit" value="logout"/></div>
+		</form>
+	</div>
+</div>
+</body>
+</html>
